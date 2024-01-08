@@ -19,7 +19,6 @@ jobs:
       USER: root
       PASSWORD: root
       DBNAME: root
-      
     strategy:
       matrix:
         go_version: ['1.20']
