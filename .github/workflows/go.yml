@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       HOST: localhost
-      PORT: 5432
+      PORT: '5432'
       USER: root
       PASSWORD: root
       DBNAME: root
@@ -38,7 +38,7 @@ jobs:
     - name: Create-DB
       run: docker compose up -d
 
-    - name: Sleep for 10s
+    - name: Sleep for 5s
       uses: juliangruber/sleep-action@v2.0.0
       with:
         time: 10s
